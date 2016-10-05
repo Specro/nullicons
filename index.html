@@ -1,127 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 	<head>
-		<meta charset="utf-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-		<script src="https://rawgit.com/jonathantneal/svg4everybody/master/dist/svg4everybody.js"></script>
-		<script>svg4everybody();</script>
-		<title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
-		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
-		<style type="text/css">
-			.null-acl2-dims { width: 128px; height: 128px; }
-			.null-ada-dims { width: 128px; height: 128px; }
-			.null-ambienttalk-dims { width: 128px; height: 128px; }
-			.null-ampl-dims { width: 128px; height: 128px; }
-			.null-android-dims { width: 128px; height: 128px; }
-			.null-angular-dims { width: 128px; height: 128px; }
-			.null-apache-dims { width: 128px; height: 128px; }
-			.null-applescript-dims { width: 128px; height: 128px; }
-			.null-assembly-dims { width: 128px; height: 128px; }
-			.null-aurelia-dims { width: 128px; height: 128px; }
-			.null-awk-dims { width: 128px; height: 128px; }
-			.null-backbone-dims { width: 128px; height: 128px; }
-			.null-bitbucket-dims { width: 128px; height: 128px; }
-			.null-boo-dims { width: 128px; height: 128px; }
-			.null-bower-dims { width: 128px; height: 128px; }
-			.null-brunch-dims { width: 128px; height: 128px; }
-			.null-c-dims { width: 128px; height: 128px; }
-			.null-c-plus-plus-dims { width: 128px; height: 128px; }
-			.null-c-sharp-dims { width: 128px; height: 128px; }
-			.null-capistrano-dims { width: 128px; height: 128px; }
-			.null-ceylon-dims { width: 128px; height: 128px; }
-			.null-chapel-dims { width: 128px; height: 128px; }
-			.null-citrine-dims { width: 128px; height: 128px; }
-			.null-clojure-dims { width: 128px; height: 128px; }
-			.null-codeigniter-dims { width: 128px; height: 128px; }
-			.null-coffeescript-dims { width: 128px; height: 128px; }
-			.null-coldfusion-dims { width: 128px; height: 128px; }
-			.null-css-dims { width: 128px; height: 128px; }
-			.null-curl-dims { width: 128px; height: 128px; }
-			.null-d-dims { width: 128px; height: 128px; }
-			.null-dart-dims { width: 128px; height: 128px; }
-			.null-eclipse-dims { width: 128px; height: 128px; }
-			.null-elixir-dims { width: 128px; height: 128px; }
-			.null-elm-dims { width: 128px; height: 128px; }
-			.null-ember-dims { width: 128px; height: 128px; }
-			.null-erlang-dims { width: 128px; height: 128px; }
-			.null-euphoria-dims { width: 128px; height: 128px; }
-			.null-f-sharp-dims { width: 128px; height: 128px; }
-			.null-factor-dims { width: 128px; height: 128px; }
-			.null-falcon-dims { width: 128px; height: 128px; }
-			.null-fortran-dims { width: 128px; height: 128px; }
-			.null-frege-dims { width: 128px; height: 128px; }
-			.null-git-dims { width: 128px; height: 128px; }
-			.null-github-dims { width: 128px; height: 128px; }
-			.null-gitlab-dims { width: 128px; height: 128px; }
-			.null-go-dims { width: 128px; height: 128px; }
-			.null-groovy-dims { width: 128px; height: 128px; }
-			.null-grunt-dims { width: 128px; height: 128px; }
-			.null-gulp-dims { width: 128px; height: 128px; }
-			.null-hack-dims { width: 128px; height: 128px; }
-			.null-haml-dims { width: 128px; height: 128px; }
-			.null-haskell-dims { width: 128px; height: 128px; }
-			.null-haxe-dims { width: 128px; height: 128px; }
-			.null-hop-dims { width: 128px; height: 128px; }
-			.null-html-dims { width: 128px; height: 128px; }
-			.null-j-dims { width: 128px; height: 128px; }
-			.null-jade-dims { width: 128px; height: 128px; }
-			.null-java-dims { width: 128px; height: 128px; }
-			.null-javascript-dims { width: 128px; height: 128px; }
-			.null-jekyll-dims { width: 128px; height: 128px; }
-			.null-jquery-dims { width: 128px; height: 128px; }
-			.null-julia-dims { width: 128px; height: 128px; }
-			.null-kotlin-dims { width: 128px; height: 128px; }
-			.null-laravel-dims { width: 128px; height: 128px; }
-			.null-lasso-dims { width: 128px; height: 128px; }
-			.null-latex-dims { width: 128px; height: 128px; }
-			.null-less-dims { width: 128px; height: 128px; }
-			.null-lisp-dims { width: 128px; height: 128px; }
-			.null-lua-dims { width: 128px; height: 128px; }
-			.null-markdown-dims { width: 128px; height: 128px; }
-			.null-matlab-dims { width: 128px; height: 128px; }
-			.null-mercury-dims { width: 128px; height: 128px; }
-			.null-mustache-dims { width: 128px; height: 128px; }
-			.null-mysql-dims { width: 128px; height: 128px; }
-			.null-nginx-dims { width: 128px; height: 128px; }
-			.null-nim-dims { width: 128px; height: 128px; }
-			.null-node-dims { width: 128px; height: 128px; }
-			.null-npm-dims { width: 128px; height: 128px; }
-			.null-oberon-dims { width: 128px; height: 128px; }
-			.null-ocaml-dims { width: 128px; height: 128px; }
-			.null-opencl-dims { width: 128px; height: 128px; }
-			.null-pascal-dims { width: 128px; height: 128px; }
-			.null-perl-dims { width: 128px; height: 128px; }
-			.null-php-dims { width: 128px; height: 128px; }
-			.null-polymer-dims { width: 128px; height: 128px; }
-			.null-postgresql-dims { width: 128px; height: 128px; }
-			.null-processing-dims { width: 128px; height: 128px; }
-			.null-prolog-dims { width: 128px; height: 128px; }
-			.null-puppet-dims { width: 128px; height: 128px; }
-			.null-python-dims { width: 128px; height: 128px; }
-			.null-r-dims { width: 128px; height: 128px; }
-			.null-react-dims { width: 128px; height: 128px; }
-			.null-rexx-dims { width: 128px; height: 128px; }
-			.null-ruby-dims { width: 128px; height: 128px; }
-			.null-ruby-on-rails-dims { width: 128px; height: 128px; }
-			.null-rust-dims { width: 128px; height: 128px; }
-			.null-sass-dims { width: 128px; height: 128px; }
-			.null-scala-dims { width: 128px; height: 128px; }
-			.null-scheme-dims { width: 128px; height: 128px; }
-			.null-stylus-dims { width: 128px; height: 128px; }
-			.null-swift-dims { width: 128px; height: 128px; }
-			.null-symfony-dims { width: 128px; height: 128px; }
-			.null-tcl-dims { width: 128px; height: 128px; }
-			.null-textile-dims { width: 128px; height: 128px; }
-			.null-twig-dims { width: 128px; height: 128px; }
-			.null-vagrant-dims { width: 128px; height: 128px; }
-			.null-visual-basic-dims { width: 128px; height: 128px; }
-			.null-vue-dims { width: 128px; height: 128px; }
-			.null-whiley-dims { width: 128px; height: 128px; }
-			.null-yii-dims { width: 128px; height: 128px; }
-			.null-zend-dims { width: 128px; height: 128px; }
-		</style>
+		<title>Nullicons</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body>
+	<body class="landing">
 		<svg width="0" height="0" style="position:absolute">
 				<symbol viewBox="0 0 128 128" id="acl2"><path d="M121.8 51.6l-8.3-13.1s-16.6-16-54.3 24.4c0 0-53.2-9.4-53.2 12.7l7.2 12s15 18.9 50.1-16.8c0 0 45.3 6.4 54.3-9.3-.1 0 5.6-3.9 4.2-9.9zM16.4 81l.3-3.9s7-8.2 34.8-7.9c0-.1-18.2 19.5-35.1 11.8zm93.3-31.5s-2.9 10.2-35.5 11.9c0 0 19.7-19 35.5-15v3.1z"/></symbol>
 				<symbol viewBox="0 0 128 128" id="ada"><path d="M116.6 75.8V59.4s.2-8.7-11.9-8.7-14.1 8.5-14.1 9.5h7.5s1.2-3.3 6.3-3.3 5.2 2.1 5.2 2.5c0 .4 0 3.3-7.6 3.3s-12.4 3.4-12.4 8.7c0 1.3.4 1.7.4 1.8-1.8-.1-3.8-.1-5.8-.1l.4-34.1h-7.7v15.2s-2.7-3.3-8.6-3.3C55 51 55 65.6 55 65.6c0 4.5 1.3 7.1 2.4 8.5-1.7.2-3.5.4-5.2.7L40.4 41.9H31l-14.8 42c-3.9 1.6-7.4 3.2-10.3 5 0 0 52.1-20.7 116-11.6.1 0-1.3-.7-5.3-1.5zM35.7 49.9l5.4 15.7H30.2l5.5-15.7zM25.2 80.8l2.9-8.4h15l1.4 3.7c-6.4 1.2-13.1 2.8-19.3 4.7zm47.9-7.5h-6.6c-2.3-1.4-3.9-4.1-3.9-7.3 0-4.5 3.2-8.2 7.2-8.2S77 61.5 77 66c0 3.2-1.6 5.9-3.9 7.3zm36.8-3.3s-.3 4.2-6.8 4.2-6.3-2.8-6.3-2.8 0-3.3 5.8-3.3c4.3 0 7.3-1.7 7.3-1.7V70z"/></symbol>
@@ -235,1243 +123,1290 @@
 				<symbol viewBox="0 0 128 128" id="yii"><path d="M103.9 6c-13.2.5-29.2 17-23.8 32.5 5.8 15.3 9.5 26.2 10.3 43.3 13.9-14 26.7-29.2 27.7-46.8.4-14.4-6.4-25-14.2-29zM69.1 69.6c-2 3.5-4.6 7.4-8 11.6-7.1 9-14.3 23.6-12.1 40.9 29.4-3.2 38.5-25.3 39.3-37.4-5.4-8.4-15.4-13.6-19.2-15.1z"/><path d="M9.9 16.7c-1 13.5 4.7 33.5 28.1 39.9 9.8 2.9 16.7 4.7 24.2 7.4 10.9 4 19.5 9 26.3 17.8-1.3-15-7.4-32.2-17.3-45.7C57 16.9 32.6 7.7 9.9 16.7z"/></symbol>
 				<symbol viewBox="0 0 128 128" id="zend"><path d="M75.9 37c-15.4 0-15.4 15.4-15.4 15.4h46.1C122 52.3 122 37 122 37H75.9zM60.5 72h23c15.4 0 15.4-15.4 15.4-15.4h-23C60.5 56.6 60.5 72 60.5 72zM60.5 91.6h7.7c15.4 0 15.4-15.4 15.4-15.4h-7.7c-15.4 0-15.4 15.4-15.4 15.4z"/><path d="M62 36.2H10.5v12.2h27.3L6 91.8h49.4V79.6H30.3z"/></symbol>
 		</svg>
-		<header>
-			<h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
-			<p>Simple preview generated by svg sprite.</p>
-			<ul>
-				<li>Your browser has to <a href="http://caniuse.com/#feat=svg-html5" target="_blank">support inline SVG</a> for these techniques to work.</li>
-				<li>Internet Explorer up to version 11 doesn't support external sprites for use with inline SVG. For IE 9-11, you may polyfill this functionality with <a href="https://github.com/jonathantneal/svg4everybody" target="_blank">SVG for Everybody</a>.</li>
-			</ul>
-		</header>
-		<section>
 
-			<ul>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<!--<h1><a href="index.html">Nullicons</a></h1>
+				<a href="#nav">Menu</a>-->
+			</header>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Nullicons</h2>
+				<p>An icon set based on programming, web and software development</p>
+				<ul class="actions">
+					<li><a href="https://github.com/Specro/nullicons" class="button special">Download</a></li>
+				</ul>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<div id="icon-list" class="inner">
+					<div class="container 50%">
+						<form>
+							<div class="row">
+								<input type="text" class="icon-search" name="icon" placeholder="Search..."/>
+							</div>
+						</form>
+					</div>
+					<div class="row list">
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="acl2">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-acl2">
+											<use xlink:href="#acl2"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ada">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ada">
+											<use xlink:href="#ada"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ambienttalk">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ambienttalk">
+											<use xlink:href="#ambienttalk"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ampl">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ampl">
+											<use xlink:href="#ampl"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="android">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-android">
+											<use xlink:href="#android"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="angular">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-angular">
+											<use xlink:href="#angular"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="apache">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-apache">
+											<use xlink:href="#apache"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="applescript">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-applescript">
+											<use xlink:href="#applescript"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="assembly">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-assembly">
+											<use xlink:href="#assembly"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="aurelia">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-aurelia">
+											<use xlink:href="#aurelia"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="awk">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-awk">
+											<use xlink:href="#awk"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="backbone">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-backbone">
+											<use xlink:href="#backbone"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="bitbucket">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-bitbucket">
+											<use xlink:href="#bitbucket"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="boo">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-boo">
+											<use xlink:href="#boo"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="bower">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-bower">
+											<use xlink:href="#bower"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="brunch">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-brunch">
+											<use xlink:href="#brunch"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="c">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-c">
+											<use xlink:href="#c"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="c-plus-plus">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-c-plus-plus">
+											<use xlink:href="#c-plus-plus"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="c-sharp">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-c-sharp">
+											<use xlink:href="#c-sharp"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="capistrano">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-capistrano">
+											<use xlink:href="#capistrano"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ceylon">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ceylon">
+											<use xlink:href="#ceylon"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="chapel">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-chapel">
+											<use xlink:href="#chapel"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="citrine">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-citrine">
+											<use xlink:href="#citrine"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="clojure">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-clojure">
+											<use xlink:href="#clojure"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="codeigniter">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-codeigniter">
+											<use xlink:href="#codeigniter"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="coffeescript">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-coffeescript">
+											<use xlink:href="#coffeescript"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="coldfusion">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-coldfusion">
+											<use xlink:href="#coldfusion"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="css">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-css">
+											<use xlink:href="#css"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="curl">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-curl">
+											<use xlink:href="#curl"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="d">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-d">
+											<use xlink:href="#d"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="dart">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-dart">
+											<use xlink:href="#dart"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="eclipse">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-eclipse">
+											<use xlink:href="#eclipse"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="elixir">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-elixir">
+											<use xlink:href="#elixir"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="elm">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-elm">
+											<use xlink:href="#elm"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ember">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ember">
+											<use xlink:href="#ember"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="erlang">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-erlang">
+											<use xlink:href="#erlang"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="euphoria">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-euphoria">
+											<use xlink:href="#euphoria"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="f-sharp">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-f-sharp">
+											<use xlink:href="#f-sharp"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="factor">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-factor">
+											<use xlink:href="#factor"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="falcon">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-falcon">
+											<use xlink:href="#falcon"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="fortran">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-fortran">
+											<use xlink:href="#fortran"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="frege">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-frege">
+											<use xlink:href="#frege"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="git">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-git">
+											<use xlink:href="#git"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="github">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-github">
+											<use xlink:href="#github"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="gitlab">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-gitlab">
+											<use xlink:href="#gitlab"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="go">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-go">
+											<use xlink:href="#go"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="groovy">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-groovy">
+											<use xlink:href="#groovy"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="grunt">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-grunt">
+											<use xlink:href="#grunt"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="gulp">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-gulp">
+											<use xlink:href="#gulp"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="hack">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-hack">
+											<use xlink:href="#hack"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="haml">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-haml">
+											<use xlink:href="#haml"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="haskell">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-haskell">
+											<use xlink:href="#haskell"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="haxe">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-haxe">
+											<use xlink:href="#haxe"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="hop">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-hop">
+											<use xlink:href="#hop"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="html">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-html">
+											<use xlink:href="#html"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="j">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-j">
+											<use xlink:href="#j"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="jade">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-jade">
+											<use xlink:href="#jade"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="java">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-java">
+											<use xlink:href="#java"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="javascript">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-javascript">
+											<use xlink:href="#javascript"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="jekyll">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-jekyll">
+											<use xlink:href="#jekyll"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="jquery">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-jquery">
+											<use xlink:href="#jquery"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="julia">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-julia">
+											<use xlink:href="#julia"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="kotlin">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-kotlin">
+											<use xlink:href="#kotlin"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="laravel">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-laravel">
+											<use xlink:href="#laravel"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="lasso">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-lasso">
+											<use xlink:href="#lasso"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="latex">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-latex">
+											<use xlink:href="#latex"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="less">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-less">
+											<use xlink:href="#less"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="lisp">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-lisp">
+											<use xlink:href="#lisp"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="lua">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-lua">
+											<use xlink:href="#lua"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="markdown">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-markdown">
+											<use xlink:href="#markdown"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="matlab">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-matlab">
+											<use xlink:href="#matlab"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="mercury">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-mercury">
+											<use xlink:href="#mercury"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="mustache">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-mustache">
+											<use xlink:href="#mustache"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="mysql">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-mysql">
+											<use xlink:href="#mysql"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="nginx">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-nginx">
+											<use xlink:href="#nginx"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="nim">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-nim">
+											<use xlink:href="#nim"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="node">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-node">
+											<use xlink:href="#node"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="npm">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-npm">
+											<use xlink:href="#npm"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="oberon">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-oberon">
+											<use xlink:href="#oberon"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ocaml">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ocaml">
+											<use xlink:href="#ocaml"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="opencl">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-opencl">
+											<use xlink:href="#opencl"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="pascal">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-pascal">
+											<use xlink:href="#pascal"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="perl">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-perl">
+											<use xlink:href="#perl"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="php">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-php">
+											<use xlink:href="#php"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="polymer">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-polymer">
+											<use xlink:href="#polymer"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="postgresql">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-postgresql">
+											<use xlink:href="#postgresql"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="processing">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-processing">
+											<use xlink:href="#processing"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="prolog">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-prolog">
+											<use xlink:href="#prolog"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="puppet">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-puppet">
+											<use xlink:href="#puppet"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="python">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-python">
+											<use xlink:href="#python"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="r">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-r">
+											<use xlink:href="#r"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="react">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-react">
+											<use xlink:href="#react"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="rexx">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-rexx">
+											<use xlink:href="#rexx"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ruby">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ruby">
+											<use xlink:href="#ruby"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="ruby-on-rails">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-ruby-on-rails">
+											<use xlink:href="#ruby-on-rails"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="rust">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-rust">
+											<use xlink:href="#rust"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="sass">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-sass">
+											<use xlink:href="#sass"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="scala">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-scala">
+											<use xlink:href="#scala"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="scheme">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-scheme">
+											<use xlink:href="#scheme"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="stylus">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-stylus">
+											<use xlink:href="#stylus"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="swift">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-swift">
+											<use xlink:href="#swift"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="symfony">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-symfony">
+											<use xlink:href="#symfony"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="tcl">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-tcl">
+											<use xlink:href="#tcl"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="textile">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-textile">
+											<use xlink:href="#textile"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="twig">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-twig">
+											<use xlink:href="#twig"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="vagrant">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-vagrant">
+											<use xlink:href="#vagrant"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="visual-basic">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-visual-basic">
+											<use xlink:href="#visual-basic"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="vue">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-vue">
+											<use xlink:href="#vue"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="whiley">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-whiley">
+											<use xlink:href="#whiley"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="yii">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-yii">
+											<use xlink:href="#yii"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="2u 3u(medium) 4u(small) 6u(xsmall)" data-icon="zend">
+							<div class="feature">
+								<div class="content">
+									<p>
+										<svg class="null-zend">
+											<use xlink:href="#zend"></use>
+										</svg>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<p>Visit Nullicons on Github</p>
+					<ul class="icons">
+						<li><a href="https://github.com/Specro/nullicons" class="icon fa-github">
+							<span class="label">Github</span>
+						</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Liudas Dzisevicius &copy; 2016</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-layout.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-				<li title="acl2">
-					<div class="icon-box">
-
-						<!-- acl2 -->
-						<svg class="null-acl2-dims">
-							<use xlink:href="#acl2"></use>
-						</svg>
-
-					</div>
-					<h2>acl2</h2>
-				</li>
-				<li title="ada">
-					<div class="icon-box">
-
-						<!-- ada -->
-						<svg class="null-ada-dims">
-							<use xlink:href="#ada"></use>
-						</svg>
-
-					</div>
-					<h2>ada</h2>
-				</li>
-				<li title="ambienttalk">
-					<div class="icon-box">
-
-						<!-- ambienttalk -->
-						<svg class="null-ambienttalk-dims">
-							<use xlink:href="#ambienttalk"></use>
-						</svg>
-
-					</div>
-					<h2>ambienttalk</h2>
-				</li>
-				<li title="ampl">
-					<div class="icon-box">
-
-						<!-- ampl -->
-						<svg class="null-ampl-dims">
-							<use xlink:href="#ampl"></use>
-						</svg>
-
-					</div>
-					<h2>ampl</h2>
-				</li>
-				<li title="android">
-					<div class="icon-box">
-
-						<!-- android -->
-						<svg class="null-android-dims">
-							<use xlink:href="#android"></use>
-						</svg>
-
-					</div>
-					<h2>android</h2>
-				</li>
-				<li title="angular">
-					<div class="icon-box">
-
-						<!-- angular -->
-						<svg class="null-angular-dims">
-							<use xlink:href="#angular"></use>
-						</svg>
-
-					</div>
-					<h2>angular</h2>
-				</li>
-				<li title="apache">
-					<div class="icon-box">
-
-						<!-- apache -->
-						<svg class="null-apache-dims">
-							<use xlink:href="#apache"></use>
-						</svg>
-
-					</div>
-					<h2>apache</h2>
-				</li>
-				<li title="applescript">
-					<div class="icon-box">
-
-						<!-- applescript -->
-						<svg class="null-applescript-dims">
-							<use xlink:href="#applescript"></use>
-						</svg>
-
-					</div>
-					<h2>applescript</h2>
-				</li>
-				<li title="assembly">
-					<div class="icon-box">
-
-						<!-- assembly -->
-						<svg class="null-assembly-dims">
-							<use xlink:href="#assembly"></use>
-						</svg>
-
-					</div>
-					<h2>assembly</h2>
-				</li>
-				<li title="aurelia">
-					<div class="icon-box">
-
-						<!-- aurelia -->
-						<svg class="null-aurelia-dims">
-							<use xlink:href="#aurelia"></use>
-						</svg>
-
-					</div>
-					<h2>aurelia</h2>
-				</li>
-				<li title="awk">
-					<div class="icon-box">
-
-						<!-- awk -->
-						<svg class="null-awk-dims">
-							<use xlink:href="#awk"></use>
-						</svg>
-
-					</div>
-					<h2>awk</h2>
-				</li>
-				<li title="backbone">
-					<div class="icon-box">
-
-						<!-- backbone -->
-						<svg class="null-backbone-dims">
-							<use xlink:href="#backbone"></use>
-						</svg>
-
-					</div>
-					<h2>backbone</h2>
-				</li>
-				<li title="bitbucket">
-					<div class="icon-box">
-
-						<!-- bitbucket -->
-						<svg class="null-bitbucket-dims">
-							<use xlink:href="#bitbucket"></use>
-						</svg>
-
-					</div>
-					<h2>bitbucket</h2>
-				</li>
-				<li title="boo">
-					<div class="icon-box">
-
-						<!-- boo -->
-						<svg class="null-boo-dims">
-							<use xlink:href="#boo"></use>
-						</svg>
-
-					</div>
-					<h2>boo</h2>
-				</li>
-				<li title="bower">
-					<div class="icon-box">
-
-						<!-- bower -->
-						<svg class="null-bower-dims">
-							<use xlink:href="#bower"></use>
-						</svg>
-
-					</div>
-					<h2>bower</h2>
-				</li>
-				<li title="brunch">
-					<div class="icon-box">
-
-						<!-- brunch -->
-						<svg class="null-brunch-dims">
-							<use xlink:href="#brunch"></use>
-						</svg>
-
-					</div>
-					<h2>brunch</h2>
-				</li>
-				<li title="c">
-					<div class="icon-box">
-
-						<!-- c -->
-						<svg class="null-c-dims">
-							<use xlink:href="#c"></use>
-						</svg>
-
-					</div>
-					<h2>c</h2>
-				</li>
-				<li title="c-plus-plus">
-					<div class="icon-box">
-
-						<!-- c-plus-plus -->
-						<svg class="null-c-plus-plus-dims">
-							<use xlink:href="#c-plus-plus"></use>
-						</svg>
-
-					</div>
-					<h2>c-plus-plus</h2>
-				</li>
-				<li title="c-sharp">
-					<div class="icon-box">
-
-						<!-- c-sharp -->
-						<svg class="null-c-sharp-dims">
-							<use xlink:href="#c-sharp"></use>
-						</svg>
-
-					</div>
-					<h2>c-sharp</h2>
-				</li>
-				<li title="capistrano">
-					<div class="icon-box">
-
-						<!-- capistrano -->
-						<svg class="null-capistrano-dims">
-							<use xlink:href="#capistrano"></use>
-						</svg>
-
-					</div>
-					<h2>capistrano</h2>
-				</li>
-				<li title="ceylon">
-					<div class="icon-box">
-
-						<!-- ceylon -->
-						<svg class="null-ceylon-dims">
-							<use xlink:href="#ceylon"></use>
-						</svg>
-
-					</div>
-					<h2>ceylon</h2>
-				</li>
-				<li title="chapel">
-					<div class="icon-box">
-
-						<!-- chapel -->
-						<svg class="null-chapel-dims">
-							<use xlink:href="#chapel"></use>
-						</svg>
-
-					</div>
-					<h2>chapel</h2>
-				</li>
-				<li title="citrine">
-					<div class="icon-box">
-
-						<!-- citrine -->
-						<svg class="null-citrine-dims">
-							<use xlink:href="#citrine"></use>
-						</svg>
-
-					</div>
-					<h2>citrine</h2>
-				</li>
-				<li title="clojure">
-					<div class="icon-box">
-
-						<!-- clojure -->
-						<svg class="null-clojure-dims">
-							<use xlink:href="#clojure"></use>
-						</svg>
-
-					</div>
-					<h2>clojure</h2>
-				</li>
-				<li title="codeigniter">
-					<div class="icon-box">
-
-						<!-- codeigniter -->
-						<svg class="null-codeigniter-dims">
-							<use xlink:href="#codeigniter"></use>
-						</svg>
-
-					</div>
-					<h2>codeigniter</h2>
-				</li>
-				<li title="coffeescript">
-					<div class="icon-box">
-
-						<!-- coffeescript -->
-						<svg class="null-coffeescript-dims">
-							<use xlink:href="#coffeescript"></use>
-						</svg>
-
-					</div>
-					<h2>coffeescript</h2>
-				</li>
-				<li title="coldfusion">
-					<div class="icon-box">
-
-						<!-- coldfusion -->
-						<svg class="null-coldfusion-dims">
-							<use xlink:href="#coldfusion"></use>
-						</svg>
-
-					</div>
-					<h2>coldfusion</h2>
-				</li>
-				<li title="css">
-					<div class="icon-box">
-
-						<!-- css -->
-						<svg class="null-css-dims">
-							<use xlink:href="#css"></use>
-						</svg>
-
-					</div>
-					<h2>css</h2>
-				</li>
-				<li title="curl">
-					<div class="icon-box">
-
-						<!-- curl -->
-						<svg class="null-curl-dims">
-							<use xlink:href="#curl"></use>
-						</svg>
-
-					</div>
-					<h2>curl</h2>
-				</li>
-				<li title="d">
-					<div class="icon-box">
-
-						<!-- d -->
-						<svg class="null-d-dims">
-							<use xlink:href="#d"></use>
-						</svg>
-
-					</div>
-					<h2>d</h2>
-				</li>
-				<li title="dart">
-					<div class="icon-box">
-
-						<!-- dart -->
-						<svg class="null-dart-dims">
-							<use xlink:href="#dart"></use>
-						</svg>
-
-					</div>
-					<h2>dart</h2>
-				</li>
-				<li title="eclipse">
-					<div class="icon-box">
-
-						<!-- eclipse -->
-						<svg class="null-eclipse-dims">
-							<use xlink:href="#eclipse"></use>
-						</svg>
-
-					</div>
-					<h2>eclipse</h2>
-				</li>
-				<li title="elixir">
-					<div class="icon-box">
-
-						<!-- elixir -->
-						<svg class="null-elixir-dims">
-							<use xlink:href="#elixir"></use>
-						</svg>
-
-					</div>
-					<h2>elixir</h2>
-				</li>
-				<li title="elm">
-					<div class="icon-box">
-
-						<!-- elm -->
-						<svg class="null-elm-dims">
-							<use xlink:href="#elm"></use>
-						</svg>
-
-					</div>
-					<h2>elm</h2>
-				</li>
-				<li title="ember">
-					<div class="icon-box">
-
-						<!-- ember -->
-						<svg class="null-ember-dims">
-							<use xlink:href="#ember"></use>
-						</svg>
-
-					</div>
-					<h2>ember</h2>
-				</li>
-				<li title="erlang">
-					<div class="icon-box">
-
-						<!-- erlang -->
-						<svg class="null-erlang-dims">
-							<use xlink:href="#erlang"></use>
-						</svg>
-
-					</div>
-					<h2>erlang</h2>
-				</li>
-				<li title="euphoria">
-					<div class="icon-box">
-
-						<!-- euphoria -->
-						<svg class="null-euphoria-dims">
-							<use xlink:href="#euphoria"></use>
-						</svg>
-
-					</div>
-					<h2>euphoria</h2>
-				</li>
-				<li title="f-sharp">
-					<div class="icon-box">
-
-						<!-- f-sharp -->
-						<svg class="null-f-sharp-dims">
-							<use xlink:href="#f-sharp"></use>
-						</svg>
-
-					</div>
-					<h2>f-sharp</h2>
-				</li>
-				<li title="factor">
-					<div class="icon-box">
-
-						<!-- factor -->
-						<svg class="null-factor-dims">
-							<use xlink:href="#factor"></use>
-						</svg>
-
-					</div>
-					<h2>factor</h2>
-				</li>
-				<li title="falcon">
-					<div class="icon-box">
-
-						<!-- falcon -->
-						<svg class="null-falcon-dims">
-							<use xlink:href="#falcon"></use>
-						</svg>
-
-					</div>
-					<h2>falcon</h2>
-				</li>
-				<li title="fortran">
-					<div class="icon-box">
-
-						<!-- fortran -->
-						<svg class="null-fortran-dims">
-							<use xlink:href="#fortran"></use>
-						</svg>
-
-					</div>
-					<h2>fortran</h2>
-				</li>
-				<li title="frege">
-					<div class="icon-box">
-
-						<!-- frege -->
-						<svg class="null-frege-dims">
-							<use xlink:href="#frege"></use>
-						</svg>
-
-					</div>
-					<h2>frege</h2>
-				</li>
-				<li title="git">
-					<div class="icon-box">
-
-						<!-- git -->
-						<svg class="null-git-dims">
-							<use xlink:href="#git"></use>
-						</svg>
-
-					</div>
-					<h2>git</h2>
-				</li>
-				<li title="github">
-					<div class="icon-box">
-
-						<!-- github -->
-						<svg class="null-github-dims">
-							<use xlink:href="#github"></use>
-						</svg>
-
-					</div>
-					<h2>github</h2>
-				</li>
-				<li title="gitlab">
-					<div class="icon-box">
-
-						<!-- gitlab -->
-						<svg class="null-gitlab-dims">
-							<use xlink:href="#gitlab"></use>
-						</svg>
-
-					</div>
-					<h2>gitlab</h2>
-				</li>
-				<li title="go">
-					<div class="icon-box">
-
-						<!-- go -->
-						<svg class="null-go-dims">
-							<use xlink:href="#go"></use>
-						</svg>
-
-					</div>
-					<h2>go</h2>
-				</li>
-				<li title="groovy">
-					<div class="icon-box">
-
-						<!-- groovy -->
-						<svg class="null-groovy-dims">
-							<use xlink:href="#groovy"></use>
-						</svg>
-
-					</div>
-					<h2>groovy</h2>
-				</li>
-				<li title="grunt">
-					<div class="icon-box">
-
-						<!-- grunt -->
-						<svg class="null-grunt-dims">
-							<use xlink:href="#grunt"></use>
-						</svg>
-
-					</div>
-					<h2>grunt</h2>
-				</li>
-				<li title="gulp">
-					<div class="icon-box">
-
-						<!-- gulp -->
-						<svg class="null-gulp-dims">
-							<use xlink:href="#gulp"></use>
-						</svg>
-
-					</div>
-					<h2>gulp</h2>
-				</li>
-				<li title="hack">
-					<div class="icon-box">
-
-						<!-- hack -->
-						<svg class="null-hack-dims">
-							<use xlink:href="#hack"></use>
-						</svg>
-
-					</div>
-					<h2>hack</h2>
-				</li>
-				<li title="haml">
-					<div class="icon-box">
-
-						<!-- haml -->
-						<svg class="null-haml-dims">
-							<use xlink:href="#haml"></use>
-						</svg>
-
-					</div>
-					<h2>haml</h2>
-				</li>
-				<li title="haskell">
-					<div class="icon-box">
-
-						<!-- haskell -->
-						<svg class="null-haskell-dims">
-							<use xlink:href="#haskell"></use>
-						</svg>
-
-					</div>
-					<h2>haskell</h2>
-				</li>
-				<li title="haxe">
-					<div class="icon-box">
-
-						<!-- haxe -->
-						<svg class="null-haxe-dims">
-							<use xlink:href="#haxe"></use>
-						</svg>
-
-					</div>
-					<h2>haxe</h2>
-				</li>
-				<li title="hop">
-					<div class="icon-box">
-
-						<!-- hop -->
-						<svg class="null-hop-dims">
-							<use xlink:href="#hop"></use>
-						</svg>
-
-					</div>
-					<h2>hop</h2>
-				</li>
-				<li title="html">
-					<div class="icon-box">
-
-						<!-- html -->
-						<svg class="null-html-dims">
-							<use xlink:href="#html"></use>
-						</svg>
-
-					</div>
-					<h2>html</h2>
-				</li>
-				<li title="j">
-					<div class="icon-box">
-
-						<!-- j -->
-						<svg class="null-j-dims">
-							<use xlink:href="#j"></use>
-						</svg>
-
-					</div>
-					<h2>j</h2>
-				</li>
-				<li title="jade">
-					<div class="icon-box">
-
-						<!-- jade -->
-						<svg class="null-jade-dims">
-							<use xlink:href="#jade"></use>
-						</svg>
-
-					</div>
-					<h2>jade</h2>
-				</li>
-				<li title="java">
-					<div class="icon-box">
-
-						<!-- java -->
-						<svg class="null-java-dims">
-							<use xlink:href="#java"></use>
-						</svg>
-
-					</div>
-					<h2>java</h2>
-				</li>
-				<li title="javascript">
-					<div class="icon-box">
-
-						<!-- javascript -->
-						<svg class="null-javascript-dims">
-							<use xlink:href="#javascript"></use>
-						</svg>
-
-					</div>
-					<h2>javascript</h2>
-				</li>
-				<li title="jekyll">
-					<div class="icon-box">
-
-						<!-- jekyll -->
-						<svg class="null-jekyll-dims">
-							<use xlink:href="#jekyll"></use>
-						</svg>
-
-					</div>
-					<h2>jekyll</h2>
-				</li>
-				<li title="jquery">
-					<div class="icon-box">
-
-						<!-- jquery -->
-						<svg class="null-jquery-dims">
-							<use xlink:href="#jquery"></use>
-						</svg>
-
-					</div>
-					<h2>jquery</h2>
-				</li>
-				<li title="julia">
-					<div class="icon-box">
-
-						<!-- julia -->
-						<svg class="null-julia-dims">
-							<use xlink:href="#julia"></use>
-						</svg>
-
-					</div>
-					<h2>julia</h2>
-				</li>
-				<li title="kotlin">
-					<div class="icon-box">
-
-						<!-- kotlin -->
-						<svg class="null-kotlin-dims">
-							<use xlink:href="#kotlin"></use>
-						</svg>
-
-					</div>
-					<h2>kotlin</h2>
-				</li>
-				<li title="laravel">
-					<div class="icon-box">
-
-						<!-- laravel -->
-						<svg class="null-laravel-dims">
-							<use xlink:href="#laravel"></use>
-						</svg>
-
-					</div>
-					<h2>laravel</h2>
-				</li>
-				<li title="lasso">
-					<div class="icon-box">
-
-						<!-- lasso -->
-						<svg class="null-lasso-dims">
-							<use xlink:href="#lasso"></use>
-						</svg>
-
-					</div>
-					<h2>lasso</h2>
-				</li>
-				<li title="latex">
-					<div class="icon-box">
-
-						<!-- latex -->
-						<svg class="null-latex-dims">
-							<use xlink:href="#latex"></use>
-						</svg>
-
-					</div>
-					<h2>latex</h2>
-				</li>
-				<li title="less">
-					<div class="icon-box">
-
-						<!-- less -->
-						<svg class="null-less-dims">
-							<use xlink:href="#less"></use>
-						</svg>
-
-					</div>
-					<h2>less</h2>
-				</li>
-				<li title="lisp">
-					<div class="icon-box">
-
-						<!-- lisp -->
-						<svg class="null-lisp-dims">
-							<use xlink:href="#lisp"></use>
-						</svg>
-
-					</div>
-					<h2>lisp</h2>
-				</li>
-				<li title="lua">
-					<div class="icon-box">
-
-						<!-- lua -->
-						<svg class="null-lua-dims">
-							<use xlink:href="#lua"></use>
-						</svg>
-
-					</div>
-					<h2>lua</h2>
-				</li>
-				<li title="markdown">
-					<div class="icon-box">
-
-						<!-- markdown -->
-						<svg class="null-markdown-dims">
-							<use xlink:href="#markdown"></use>
-						</svg>
-
-					</div>
-					<h2>markdown</h2>
-				</li>
-				<li title="matlab">
-					<div class="icon-box">
-
-						<!-- matlab -->
-						<svg class="null-matlab-dims">
-							<use xlink:href="#matlab"></use>
-						</svg>
-
-					</div>
-					<h2>matlab</h2>
-				</li>
-				<li title="mercury">
-					<div class="icon-box">
-
-						<!-- mercury -->
-						<svg class="null-mercury-dims">
-							<use xlink:href="#mercury"></use>
-						</svg>
-
-					</div>
-					<h2>mercury</h2>
-				</li>
-				<li title="mustache">
-					<div class="icon-box">
-
-						<!-- mustache -->
-						<svg class="null-mustache-dims">
-							<use xlink:href="#mustache"></use>
-						</svg>
-
-					</div>
-					<h2>mustache</h2>
-				</li>
-				<li title="mysql">
-					<div class="icon-box">
-
-						<!-- mysql -->
-						<svg class="null-mysql-dims">
-							<use xlink:href="#mysql"></use>
-						</svg>
-
-					</div>
-					<h2>mysql</h2>
-				</li>
-				<li title="nginx">
-					<div class="icon-box">
-
-						<!-- nginx -->
-						<svg class="null-nginx-dims">
-							<use xlink:href="#nginx"></use>
-						</svg>
-
-					</div>
-					<h2>nginx</h2>
-				</li>
-				<li title="nim">
-					<div class="icon-box">
-
-						<!-- nim -->
-						<svg class="null-nim-dims">
-							<use xlink:href="#nim"></use>
-						</svg>
-
-					</div>
-					<h2>nim</h2>
-				</li>
-				<li title="node">
-					<div class="icon-box">
-
-						<!-- node -->
-						<svg class="null-node-dims">
-							<use xlink:href="#node"></use>
-						</svg>
-
-					</div>
-					<h2>node</h2>
-				</li>
-				<li title="npm">
-					<div class="icon-box">
-
-						<!-- npm -->
-						<svg class="null-npm-dims">
-							<use xlink:href="#npm"></use>
-						</svg>
-
-					</div>
-					<h2>npm</h2>
-				</li>
-				<li title="oberon">
-					<div class="icon-box">
-
-						<!-- oberon -->
-						<svg class="null-oberon-dims">
-							<use xlink:href="#oberon"></use>
-						</svg>
-
-					</div>
-					<h2>oberon</h2>
-				</li>
-				<li title="ocaml">
-					<div class="icon-box">
-
-						<!-- ocaml -->
-						<svg class="null-ocaml-dims">
-							<use xlink:href="#ocaml"></use>
-						</svg>
-
-					</div>
-					<h2>ocaml</h2>
-				</li>
-				<li title="opencl">
-					<div class="icon-box">
-
-						<!-- opencl -->
-						<svg class="null-opencl-dims">
-							<use xlink:href="#opencl"></use>
-						</svg>
-
-					</div>
-					<h2>opencl</h2>
-				</li>
-				<li title="pascal">
-					<div class="icon-box">
-
-						<!-- pascal -->
-						<svg class="null-pascal-dims">
-							<use xlink:href="#pascal"></use>
-						</svg>
-
-					</div>
-					<h2>pascal</h2>
-				</li>
-				<li title="perl">
-					<div class="icon-box">
-
-						<!-- perl -->
-						<svg class="null-perl-dims">
-							<use xlink:href="#perl"></use>
-						</svg>
-
-					</div>
-					<h2>perl</h2>
-				</li>
-				<li title="php">
-					<div class="icon-box">
-
-						<!-- php -->
-						<svg class="null-php-dims">
-							<use xlink:href="#php"></use>
-						</svg>
-
-					</div>
-					<h2>php</h2>
-				</li>
-				<li title="polymer">
-					<div class="icon-box">
-
-						<!-- polymer -->
-						<svg class="null-polymer-dims">
-							<use xlink:href="#polymer"></use>
-						</svg>
-
-					</div>
-					<h2>polymer</h2>
-				</li>
-				<li title="postgresql">
-					<div class="icon-box">
-
-						<!-- postgresql -->
-						<svg class="null-postgresql-dims">
-							<use xlink:href="#postgresql"></use>
-						</svg>
-
-					</div>
-					<h2>postgresql</h2>
-				</li>
-				<li title="processing">
-					<div class="icon-box">
-
-						<!-- processing -->
-						<svg class="null-processing-dims">
-							<use xlink:href="#processing"></use>
-						</svg>
-
-					</div>
-					<h2>processing</h2>
-				</li>
-				<li title="prolog">
-					<div class="icon-box">
-
-						<!-- prolog -->
-						<svg class="null-prolog-dims">
-							<use xlink:href="#prolog"></use>
-						</svg>
-
-					</div>
-					<h2>prolog</h2>
-				</li>
-				<li title="puppet">
-					<div class="icon-box">
-
-						<!-- puppet -->
-						<svg class="null-puppet-dims">
-							<use xlink:href="#puppet"></use>
-						</svg>
-
-					</div>
-					<h2>puppet</h2>
-				</li>
-				<li title="python">
-					<div class="icon-box">
-
-						<!-- python -->
-						<svg class="null-python-dims">
-							<use xlink:href="#python"></use>
-						</svg>
-
-					</div>
-					<h2>python</h2>
-				</li>
-				<li title="r">
-					<div class="icon-box">
-
-						<!-- r -->
-						<svg class="null-r-dims">
-							<use xlink:href="#r"></use>
-						</svg>
-
-					</div>
-					<h2>r</h2>
-				</li>
-				<li title="react">
-					<div class="icon-box">
-
-						<!-- react -->
-						<svg class="null-react-dims">
-							<use xlink:href="#react"></use>
-						</svg>
-
-					</div>
-					<h2>react</h2>
-				</li>
-				<li title="rexx">
-					<div class="icon-box">
-
-						<!-- rexx -->
-						<svg class="null-rexx-dims">
-							<use xlink:href="#rexx"></use>
-						</svg>
-
-					</div>
-					<h2>rexx</h2>
-				</li>
-				<li title="ruby">
-					<div class="icon-box">
-
-						<!-- ruby -->
-						<svg class="null-ruby-dims">
-							<use xlink:href="#ruby"></use>
-						</svg>
-
-					</div>
-					<h2>ruby</h2>
-				</li>
-				<li title="ruby-on-rails">
-					<div class="icon-box">
-
-						<!-- ruby-on-rails -->
-						<svg class="null-ruby-on-rails-dims">
-							<use xlink:href="#ruby-on-rails"></use>
-						</svg>
-
-					</div>
-					<h2>ruby-on-rails</h2>
-				</li>
-				<li title="rust">
-					<div class="icon-box">
-
-						<!-- rust -->
-						<svg class="null-rust-dims">
-							<use xlink:href="#rust"></use>
-						</svg>
-
-					</div>
-					<h2>rust</h2>
-				</li>
-				<li title="sass">
-					<div class="icon-box">
-
-						<!-- sass -->
-						<svg class="null-sass-dims">
-							<use xlink:href="#sass"></use>
-						</svg>
-
-					</div>
-					<h2>sass</h2>
-				</li>
-				<li title="scala">
-					<div class="icon-box">
-
-						<!-- scala -->
-						<svg class="null-scala-dims">
-							<use xlink:href="#scala"></use>
-						</svg>
-
-					</div>
-					<h2>scala</h2>
-				</li>
-				<li title="scheme">
-					<div class="icon-box">
-
-						<!-- scheme -->
-						<svg class="null-scheme-dims">
-							<use xlink:href="#scheme"></use>
-						</svg>
-
-					</div>
-					<h2>scheme</h2>
-				</li>
-				<li title="stylus">
-					<div class="icon-box">
-
-						<!-- stylus -->
-						<svg class="null-stylus-dims">
-							<use xlink:href="#stylus"></use>
-						</svg>
-
-					</div>
-					<h2>stylus</h2>
-				</li>
-				<li title="swift">
-					<div class="icon-box">
-
-						<!-- swift -->
-						<svg class="null-swift-dims">
-							<use xlink:href="#swift"></use>
-						</svg>
-
-					</div>
-					<h2>swift</h2>
-				</li>
-				<li title="symfony">
-					<div class="icon-box">
-
-						<!-- symfony -->
-						<svg class="null-symfony-dims">
-							<use xlink:href="#symfony"></use>
-						</svg>
-
-					</div>
-					<h2>symfony</h2>
-				</li>
-				<li title="tcl">
-					<div class="icon-box">
-
-						<!-- tcl -->
-						<svg class="null-tcl-dims">
-							<use xlink:href="#tcl"></use>
-						</svg>
-
-					</div>
-					<h2>tcl</h2>
-				</li>
-				<li title="textile">
-					<div class="icon-box">
-
-						<!-- textile -->
-						<svg class="null-textile-dims">
-							<use xlink:href="#textile"></use>
-						</svg>
-
-					</div>
-					<h2>textile</h2>
-				</li>
-				<li title="twig">
-					<div class="icon-box">
-
-						<!-- twig -->
-						<svg class="null-twig-dims">
-							<use xlink:href="#twig"></use>
-						</svg>
-
-					</div>
-					<h2>twig</h2>
-				</li>
-				<li title="vagrant">
-					<div class="icon-box">
-
-						<!-- vagrant -->
-						<svg class="null-vagrant-dims">
-							<use xlink:href="#vagrant"></use>
-						</svg>
-
-					</div>
-					<h2>vagrant</h2>
-				</li>
-				<li title="visual-basic">
-					<div class="icon-box">
-
-						<!-- visual-basic -->
-						<svg class="null-visual-basic-dims">
-							<use xlink:href="#visual-basic"></use>
-						</svg>
-
-					</div>
-					<h2>visual-basic</h2>
-				</li>
-				<li title="vue">
-					<div class="icon-box">
-
-						<!-- vue -->
-						<svg class="null-vue-dims">
-							<use xlink:href="#vue"></use>
-						</svg>
-
-					</div>
-					<h2>vue</h2>
-				</li>
-				<li title="whiley">
-					<div class="icon-box">
-
-						<!-- whiley -->
-						<svg class="null-whiley-dims">
-							<use xlink:href="#whiley"></use>
-						</svg>
-
-					</div>
-					<h2>whiley</h2>
-				</li>
-				<li title="yii">
-					<div class="icon-box">
-
-						<!-- yii -->
-						<svg class="null-yii-dims">
-							<use xlink:href="#yii"></use>
-						</svg>
-
-					</div>
-					<h2>yii</h2>
-				</li>
-				<li title="zend">
-					<div class="icon-box">
-
-						<!-- zend -->
-						<svg class="null-zend-dims">
-							<use xlink:href="#zend"></use>
-						</svg>
-
-					</div>
-					<h2>zend</h2>
-				</li>
-			</ul>
-		</section>
-		<footer>
-			<p>Generated at Wed, 05 Oct 2016 12:36:52 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
-		</footer>
 	</body>
 </html>
