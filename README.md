@@ -1,6 +1,6 @@
 # Nullicons - v1.0.0
 
-Nullicons is an icon set based on programming languages, web and software development in general. There are 111 icons as of now.
+Nullicons is an icon set based on programming languages, web and software development in general. There are 111 icons as of now. You can view all the icons [here](https://specro.github.io/nullicons/).
 
 ## Usage
 
@@ -61,10 +61,6 @@ More on [SVG stacking](https://hofmannsven.com/2013/laboratory/svg-stacking/).
 
 If you can't find an icon you need open an issue for it or add it yourself.
 Right now all source SVG files are 128px by 128px in size and colored in `#222222`. Always check your SVG code with the source SVG code to keep it as clean as possible.
-
-### W.I.P.
-
-* Icon demo page
 
 ### License
 
